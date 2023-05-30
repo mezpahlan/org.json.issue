@@ -1,0 +1,19 @@
+[versions]
+compose = "1.3.1"
+composeCompiler = "1.4.7"
+kotlin = "1.8.21"
+androidGradlePlugin = "7.4.2"
+
+[libraries]
+kotlin-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+androidTools = { module = "com.android.tools.build:gradle", version.ref = "androidGradlePlugin" }
+
+desugaringJdk = { module = "com.android.tools:desugar_jdk_libs", version = "1.1.5" }
+
+pubnub = { module = "com.pubnub:pubnub-kotlin", version = "7.4.2" }
+
+androidx-compose-bom = { module = "androidx.compose:compose-bom", version = "2022.11.00" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version="1.7.0" }
+androidx-compose-material = { module = "androidx.compose.material:material" }
+androidx-compose-ui = { module = "androidx.compose.ui:ui" }
+
